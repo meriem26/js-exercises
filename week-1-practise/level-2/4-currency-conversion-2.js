@@ -5,10 +5,15 @@
   Write a new function for converting to the Brazilian real
   They have also decided that they should add a 1% fee to all foreign transactions
   Find a way to add 1% to all currency conversions (think about the DRY principle)
+  Brazilian rate (1.2)
 */
 
-function convertToUSD(price) {}
-function convertToBRL(price) {}
+function convertToUSD(price) {
+  return price * 1.4 + price * 0.01 + "$";
+}
+function convertToBRL(price) {
+  return price * 1.2 + price * 0.01 + "$";
+}
 
 /* DO NOT EDIT BELOW THIS LINE */
 /* --------------------------- */
